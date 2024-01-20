@@ -1,49 +1,54 @@
 class Solution {
     public int[] sortArray(int[] nums) {
-       if (nums.length == 1) {
-            return nums;
+       mergeSort(nums, 0, nums.length);
+        return nums;
+    }
+
+    void mergeSort(int[] nums, int s, int e) {
+        if (e - s == 1) {
+            return;
         }
 
-        int s = 0;
-        int e = nums.length;
         int mid = (s + e) / 2;
 
-        int[] left = sortArray(Arrays.copyOfRange(nums, s, mid));
-        int[] right = sortArray(Arrays.copyOfRange(nums, mid, e));
+        mergeSort(nums, s, mid);
+        mergeSort(nums, mid, e);
 
-        return merge(left, right);
+        merge(nums, s, mid, e);
     }
     
-    int[] merge(int[] left, int[] right) {
-        int[] mix = new int[left.length + right.length];
+    static void merge(int[] arr, int s, int m, int e) {
+        int[] mix = new int[e - s];
 
-        int i = 0;
-        int m = 0;
-        int j = 0;
+        int i = s;
+        int j = m;
+        int k = 0;
 
-        while (i < left.length && j < right.length) {
-            if (left[i] < right[j]) {
-                mix[m] = left[i];
-                m++;
+        while (i < m && j < e) {
+            if (arr[i] < arr[j]) {
+                mix[k] = arr[i];
                 i++;
             } else {
-                mix[m] = right[j];
-                m++;
+                mix[k] = arr[j];
                 j++;
             }
+            k++;
         }
 
-        while (i < left.length) {
-            mix[m] = left[i];
-            m++;
+        while (i < m) {
+            mix[k] = arr[i];
             i++;
+            k++;
         }
 
-        while (j < right.length) {
-            mix[m] = right[j];
-            m++;
+        while (j < e) {
+            mix[k] = arr[j];
             j++;
+            k++;
         }
-        return mix;
+
+        for (int l = 0; l < mix.length; l++) {
+            arr[s + l] = mix[l];
+        }
     }
 }
