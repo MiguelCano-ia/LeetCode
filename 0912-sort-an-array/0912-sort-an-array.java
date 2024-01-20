@@ -17,7 +17,7 @@ class Solution {
         merge(nums, s, mid, e);
     }
     
-    static void merge(int[] arr, int s, int m, int e) {
+    void merge(int[] arr, int s, int m, int e) {
         int[] mix = new int[e - s];
 
         int i = s;
