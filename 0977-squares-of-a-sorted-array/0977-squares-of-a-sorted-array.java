@@ -6,11 +6,11 @@ class Solution {
         int k = nums.length - 1;
 
         while (k >= 0) {
-            if (Math.pow(nums[j], 2) < Math.pow(nums[i], 2)) {
-                result[k] = (int) Math.pow(nums[i], 2);
+            if (Math.abs(nums[j]) < Math.abs(nums[i])) {
+                result[k] = nums[i] * nums[i];
                 i++;
             } else {
-                result[k] = (int) Math.pow(nums[j], 2);
+                result[k] = nums[j] * nums[j];
                 j--;
             }
             k--;
