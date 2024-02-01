@@ -1,8 +1,8 @@
 class Solution {
     public int[][] divideArray(int[] nums, int k) {
-        quickSort(nums, 0, nums.length - 1);
-        
+        Arrays.sort(nums);
         int row = nums.length / 3;
+
         int[][] result = new int[row][3];
         int index = 0;
 
@@ -24,37 +24,5 @@ class Solution {
         }
 
         return result;
-    }
-
-    void quickSort(int[] nums, int low, int high) {
-        if (low >= high) {
-            return;
-        }
-
-        int s = low;
-        int e = high;
-        int m = s + (e - s) / 2;
-        int p = nums[m];
-
-        while(s <= e) {
-            while (nums[s] < p) {
-                s++;
-            }
-
-            while (nums[e] > p) {
-                e--;
-            }
-
-            if (s <= e) {
-                int temp = nums[s];
-                nums[s] = nums[e];
-                nums[e] = temp;
-                s++;
-                e--;
-            }
-        }
-
-        quickSort(nums, low, e);
-        quickSort(nums, s, high);
     }
 }
