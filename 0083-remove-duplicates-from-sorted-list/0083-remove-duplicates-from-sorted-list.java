@@ -14,19 +14,12 @@ class Solution {
             return null;
         }
         ListNode temp = head;
-        ListNode temp2 = head;
 
-        while(temp != null) {
-            if (temp.next == null) {
-                temp2.next = null;
-                return  head;
-            }
+        while (temp.next != null) {
             if (temp.val == temp.next.val) {
-                temp = temp.next;
+                temp.next = temp.next.next;
             } else {
                 temp = temp.next;
-                temp2.next = temp;
-                temp2 = temp;
             }
         }
         return head;
