@@ -21,7 +21,7 @@ public class Solution {
         while (f != null && f.next != null) {
             s = s.next;
             f = f.next.next;
-            if (s.equals(f)) {
+            if (s == f) {
                 return true;  
             }
         }
