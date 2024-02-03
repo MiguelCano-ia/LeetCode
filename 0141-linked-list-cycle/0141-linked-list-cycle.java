@@ -19,11 +19,10 @@ public class Solution {
         ListNode f = head;
         
         while (f != null && f.next != null) {
-            if (s.next.equals(f.next.next)) {
-                return true;
-            } else {
-                s = s.next;
-                f = f.next.next;
+            s = s.next;
+            f = f.next.next;
+            if (s.equals(f)) {
+                return true;  
             }
         }
         return false;
