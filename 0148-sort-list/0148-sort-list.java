@@ -14,58 +14,46 @@ class Solution {
             return head;
         }
 
-        ListNode mid = getMid(head);
+        ListNode s = head;
+        ListNode slow = head;
+        ListNode faster = head;
+
+        while (faster != null && faster.next != null) {
+            s = slow;
+            slow = slow.next;
+            faster = faster.next.next;
+        }
+        s.next = null;
+
         ListNode left = sortList(head);
-        ListNode right = sortList(mid);
+        ListNode right = sortList(slow);
 
-        return mergeTwoLists(left, right);
+        return merge(left, right);
     }
 
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode head = new ListNode();
+    public ListNode merge(ListNode list1, ListNode list2) {
+        ListNode node = new ListNode(0);
+        ListNode current = node;
 
-        if (list1 == null && list2 == null) {
-            return null;
-        }
-
-        ListNode temp = list1;
-        ListNode temp2 = list2;
-        ListNode result = head;
-
-        while(temp != null && temp2 != null) {
-            if (temp.val < temp2.val) {
-                result.next = new ListNode(temp.val);
-                temp = temp.next;
+        while (list1 != null && list2 != null) {
+            if (list1.val < list2.val) {
+                current.next = list1;
+                list1 = list1.next;
             } else {
-                result.next = new ListNode(temp2.val);
-                temp2 = temp2.next;
+                current.next = list2;
+                list2 = list2.next;
             }
-            result = result.next;
+            current = current.next;
         }
 
-        while (temp != null) {
-            result.next = new ListNode(temp.val);
-            temp = temp.next;
-            result = result.next;
+        if (list1 != null) {
+            current.next = list1;
         }
 
-        while (temp2 != null) {
-            result.next = new ListNode(temp2.val);
-            temp2 = temp2.next;
-            result = result.next;
+        if (list2 != null) {
+            current.next = list2;
         }
 
-        return head.next;
-    }
-
-    public ListNode getMid(ListNode head) {
-        ListNode midPrev = null;
-        while (head != null && head.next != null) {
-            midPrev = (midPrev == null) ? head : midPrev.next;
-            head = head.next.next;
-        }
-        ListNode mid = midPrev.next;
-        midPrev.next = null;
-        return mid;
+        return node.next;
     }
 }
