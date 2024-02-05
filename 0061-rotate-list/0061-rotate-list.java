@@ -15,16 +15,16 @@ class Solution {
         }
 
         int cont = 0;
-        int lenght = 1;
+        int length = 1;
         ListNode tail = head;
 
         while (tail.next != null) {
             tail = tail.next;
-            lenght++;
+            length++;
         }
 
-        if (lenght < k) {
-            k %= lenght;
+        if (length < k) {
+            k %= length;
         }
 
         while (cont != k) {
