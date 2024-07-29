@@ -13,7 +13,7 @@ class Solution {
                 case 'M' -> number = 1000;
             }
 
-            if (i < s.length() -1) {
+            if (i < s.length() -1 ) {
                 switch (s.charAt(i + 1)) {
                     case 'V' -> prev = 5;
                     case 'X' -> prev = 10;
