@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/MiguelCano-ia/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [2350-find-closest-number-to-zero](https://github.com/MiguelCano-ia/LeetCode/tree/master/2350-find-closest-number-to-zero) |
 ## Two Pointers
 |  |
@@ -29,5 +30,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/MiguelCano-ia/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0392-is-subsequence](https://github.com/MiguelCano-ia/LeetCode/tree/master/0392-is-subsequence) |
 <!---LeetCode Topics End-->
