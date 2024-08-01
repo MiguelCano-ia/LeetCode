@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/MiguelCano-ia/LeetCode/tree/master/0013-roman-to-integer) |
+| [0014-longest-common-prefix](https://github.com/MiguelCano-ia/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0392-is-subsequence](https://github.com/MiguelCano-ia/LeetCode/tree/master/0392-is-subsequence) |
 | [1894-merge-strings-alternately](https://github.com/MiguelCano-ia/LeetCode/tree/master/1894-merge-strings-alternately) |
 ## Hash Table
@@ -32,4 +33,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/MiguelCano-ia/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0392-is-subsequence](https://github.com/MiguelCano-ia/LeetCode/tree/master/0392-is-subsequence) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/MiguelCano-ia/LeetCode/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
