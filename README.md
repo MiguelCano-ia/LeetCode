@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/MiguelCano-ia/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0228-summary-ranges](https://github.com/MiguelCano-ia/LeetCode/tree/master/0228-summary-ranges) |
 | [2350-find-closest-number-to-zero](https://github.com/MiguelCano-ia/LeetCode/tree/master/2350-find-closest-number-to-zero) |
 ## Two Pointers
 |  |
