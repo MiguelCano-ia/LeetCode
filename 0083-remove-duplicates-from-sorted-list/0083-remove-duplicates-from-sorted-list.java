@@ -18,13 +18,11 @@ class Solution {
         ListNode current2 = head.next;
 
         while (current2 != null) {
-            if (current.val == current2.val) {
-                current2 = current2.next;
-            } else {
+            if (current.val != current2.val) {
                 current.next = current2;
                 current = current2;
-                current2 = current2.next;
             }
+            current2 = current2.next;
         }
         current.next = current2;
 
