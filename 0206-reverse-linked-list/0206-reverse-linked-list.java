@@ -10,24 +10,23 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
+        ListNode temp2 = null;
+        ListNode temp = head;
+
         if (head == null || head.next == null) {
             return head;
         }
 
-        ListNode prev = null;
-        ListNode present = head;
-        ListNode next = present.next;
+        while(temp != null) {
+            temp = temp.next;
+            head.next = temp2;
+            temp2 = head;
 
-        while (present != null) {
-            present.next = prev;
-            prev = present;
-            present = next;
-            if (next != null) {
-                next = next.next;
+            if (temp != null) {
+                head = temp;
             }
         }
-        head = prev;
-        
+
         return head;
     }
 }
