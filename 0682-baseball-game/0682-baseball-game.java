@@ -7,7 +7,7 @@ class Solution {
             switch (operation) {
                 case "C" -> records.pop();
                 case "D" -> records.push(records.peek() * 2);       
-                case "+" -> records.push(records.elementAt(records.size() - 1) + records.elementAt(records.size() - 2));    
+                case "+" -> records.push(records.peek() + records.elementAt(records.size() - 2));   
                 default -> records.push(Integer.parseInt(operation));
             }
         }
