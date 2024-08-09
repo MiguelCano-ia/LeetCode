@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/MiguelCano-ia/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0228-summary-ranges](https://github.com/MiguelCano-ia/LeetCode/tree/master/0228-summary-ranges) |
+| [0682-baseball-game](https://github.com/MiguelCano-ia/LeetCode/tree/master/0682-baseball-game) |
 | [2350-find-closest-number-to-zero](https://github.com/MiguelCano-ia/LeetCode/tree/master/2350-find-closest-number-to-zero) |
 ## Two Pointers
 |  |
@@ -56,4 +57,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/MiguelCano-ia/LeetCode/tree/master/0021-merge-two-sorted-lists) |
 | [0206-reverse-linked-list](https://github.com/MiguelCano-ia/LeetCode/tree/master/0206-reverse-linked-list) |
+## Stack
+|  |
+| ------- |
+| [0682-baseball-game](https://github.com/MiguelCano-ia/LeetCode/tree/master/0682-baseball-game) |
+## Simulation
+|  |
+| ------- |
+| [0682-baseball-game](https://github.com/MiguelCano-ia/LeetCode/tree/master/0682-baseball-game) |
 <!---LeetCode Topics End-->
