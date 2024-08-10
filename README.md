@@ -23,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0013-roman-to-integer](https://github.com/MiguelCano-ia/LeetCode/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/MiguelCano-ia/LeetCode/tree/master/0014-longest-common-prefix) |
+| [0020-valid-parentheses](https://github.com/MiguelCano-ia/LeetCode/tree/master/0020-valid-parentheses) |
 | [0392-is-subsequence](https://github.com/MiguelCano-ia/LeetCode/tree/master/0392-is-subsequence) |
 | [1894-merge-strings-alternately](https://github.com/MiguelCano-ia/LeetCode/tree/master/1894-merge-strings-alternately) |
 ## Hash Table
@@ -60,6 +61,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/MiguelCano-ia/LeetCode/tree/master/0020-valid-parentheses) |
 | [0682-baseball-game](https://github.com/MiguelCano-ia/LeetCode/tree/master/0682-baseball-game) |
 ## Simulation
 |  |
