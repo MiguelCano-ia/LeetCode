@@ -21,30 +21,28 @@ class Solution {
             return false;
         }
 
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(p);
-
+        Queue<TreeNode> queue1 = new LinkedList<>();
         Queue<TreeNode> queue2 = new LinkedList<>();
+        queue1.offer(p);
         queue2.offer(q);
 
-        while (!queue.isEmpty() && !queue2.isEmpty()) {
-            TreeNode temp = queue.poll();
-            TreeNode temp2 = queue2.poll();
+        while (!queue1.isEmpty() && !queue2.isEmpty()) {
+            TreeNode node1 = queue1.poll();
+            TreeNode node2 = queue2.poll();
 
-            if (temp == null || temp2 == null || temp.val != temp2.val) {
-                return false;
-            }
-
-            if (temp.left != null || temp2.left != null) {
-                queue.offer(temp.left);
-                queue2.offer(temp2.left);
+            if (node1 == null && node2 == null) {
+                continue;
             } 
-            if (temp.right != null || temp2.right != null) {
-                queue.offer(temp.right);
-                queue2.offer(temp2.right);
+            if (node1 == null || node2 == null || node1.val != node2.val) {
+                return false; 
             }
+
+            queue1.offer(node1.left);
+            queue2.offer(node2.left);
+            queue1.offer(node1.right);
+            queue2.offer(node2.right);
         }
 
-        return true;
+        return queue1.isEmpty() && queue2.isEmpty();
     }
 }
